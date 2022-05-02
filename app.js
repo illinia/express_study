@@ -8,7 +8,9 @@
 
 // console.log(`hey it's my first node app`)
 
-console.log(__dirname);
-setInterval(() => {
-  console.log('hello world');
-}, 1000);
+const { john, peter } = require('./4-name');
+const sayHi = require('./5-utils');
+
+sayHi('susan');
+sayHi(john);
+sayHi(peter);
